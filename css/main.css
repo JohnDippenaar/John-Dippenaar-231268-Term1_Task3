@@ -1,61 +1,473 @@
 body {
-    font-family: poppins;
- }
+  font-family: poppins;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
 
-.topNav{
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, .75);
-    border-radius: 32px;
-    border-left: 20px;
-    padding-left: 25px;
-    margin-left: 80px;
-    margin-right: 80px;
+.topNav {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 32px;
+  border-left: 20px;
+  padding-left: 25px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .topNav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 17px; 
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topNavRight {
-    padding-left: 40%;
-    padding-top: 15px;
+  padding-left: 40%;
+  padding-top: 15px;
 }
 
 .topNav a:hover {
-    background-color: #ffffff;
-    border-radius: 20px;
-    color: black;
-    opacity: .6;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: black;
+  opacity: 0.6;
 }
 
-.topNav a.active {    
-    color: #E61729;
-    padding-top: 17px;
+.topNav a.active {
+  color: #e61729;
+  padding-top: 17px;
+}
+.topNavSearch {
+  padding-left: 420px;
+  border-radius: 32px;
+  margin-right: 80px;
 }
 
-.imgTextOverlay{
-    width: 100%;
-    height: 800px;
-    background-image: url("../Red Planet Ventures/Assets/Images/homePageHeader.png");
-    background-size: cover;
-    padding-top: 50px;
+.box {
+  background-color: #ffffff;
+  position: absolute;
+  height: 55px;
+  width: 360px;
+  margin-right: 200px;
+  right: 80px;
+  border-radius: 10px;
+  margin-right: 80px;
 }
 
-.topNavSearch{
-    padding-left: 420px;
+.imgTextOverlay {
+  width: 100%;
+  height: 835px;
+  background-image: url("../Red Planet Ventures/Assets/Images/homePageHeader.png");
+  background-size: cover;
+  padding-top: 50px;
 }
 
-.box{
-    background-color: #ffffff;
-    position: absolute;
-    height: 55px;
-    width: 360px;
-    left: auto;
-    right: auto;
-    border-radius: 10px;
+.imgTextOverlay h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 500px;
+  margin-left: 80px;
+  margin-right: 500px;
+  margin-bottom: 20px;
+}
+
+.imgTextOverlay p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 80px;
+  margin-right: 500px;
+}
+@font-face {
+  font-family: "Porter Sans Block";
+  src: url(../Red\ Planet\ Ventures/assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff)
+    format("woff");
+}
+
+.LocalFont h1 {
+  font-family: "Porter Sans Block";
+  font-size: 50px;
+  padding-right: 200px;
+  color: rgb(198, 7, 7);
+}
+
+.LocalFont p {
+  font-family: "Poppins black";
+  font-size: 20px;
+  color: #3e1d64;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+.middleHomePage {
+  background-color: #3e1d64;
+  margin-top: 0%;
+}
+
+.middleHomePageImg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.backgroundImage {
+  background-image: url(../Red\ Planet\ Ventures/Assets/Images/marsSliderClipped1.png);
+  width: 1800px;
+  height: 400px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-radius: 50px;
+  margin-left: 80px;
+}
+
+.backgroundImage img {
+  width: 30px;
+  padding-top: 150px;
+  padding-left: 100px;
+}
+
+.flexitem1 img {
+  width: 100%;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 565px;
+  color: #5bc0de;
+  padding-left: 200px;
+  padding-right: 150px;
+}
+.colitem h3 {
+  margin: 0;
+  font-style: bold;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.colitem h2 {
+  margin: 0;
+  font-style: bold;
+  padding-top: 60px;
+}
+
+.colitem h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  padding-right: 80px;
+  padding-top: 20px;
+}
+
+.colitem button {
+  background-color: rgb(198, 7, 7);
+  height: 80px;
+  width: 300px;
+  margin-right: 200px;
+  right: 80px;
+  border-radius: 10px;
+  margin-right: 80px;
+  padding: 20px 10px;
+  margin-top: 2em;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.middleHomePage2 {
+  background-color: #ffffff;
+  margin-top: 0%;
+}
+
+.middleHomePageImg2 {
+  padding-top: 50px;
+}
+
+.flexContainer2 {
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  flex-direction: row;
+}
+
+.backgroundImage2 {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #5bc0de;
+  padding-left: 80px;
+}
+
+.backgroundImage2 img {
+  margin-right: 80px;
+  justify-content: flex-end;
+}
+
+.flexColumn2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 565px;
+  color: #5bc0de;
+  padding-left: 80px;
+  padding-right: auto;
+}
+
+.colitem2 h3 {
+  margin: 0;
+  font-style: bold;
+  font-size: 40px;
+  color: #000000;
+  padding-right: 280px;
+}
+
+.colitem2 h2 {
+  margin: 0;
+  font-style: bold;
+  padding-top: 60px;
+  padding-right: 300px;
+}
+
+.colitem2 h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  padding-right: 300px;
+  padding-top: 20px;
+}
+
+.middleHomePage3 {
+  background-color: #3e1d64;
+  margin-top: 0%;
+}
+
+.middleHomePageImg3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.flexContainer3 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backgroundImage3 {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #5bc0de;
+  margin-left: 150px;
+}
+
+.backgroundImage3 img {
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.flexColumn3 {
+  display: block;
+  align-items: center;
+  height: 565px;
+  color: #5bc0de;
+}
+
+.colitem3 h3 {
+  margin: 0;
+  font-style: bold;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.colitem3 h2 {
+  margin: 0;
+  font-style: bold;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.endHomePage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+.endHomePageImage1 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin: 0;
+}
+.endHomePageImage1 p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.endHomePageImage2 {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.endHomePageImage2 img {
+  width: 280px;
+  height: auto;
+}
+.endHomePageImage2 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.endHomePageImage2 p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.endHomePageImage1 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.endHomePageImage3 {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.endHomePageImage3 img {
+  width: 280px;
+  height: auto;
+}
+.endHomePageImage3 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.endHomePageImage3 p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.endHomePageImage4 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.endHomePageImage4 {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.endHomePageImage4 img {
+  width: 280px;
+  height: auto;
+}
+.endHomePageImage2 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.endHomePageImage4 p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.endHomePageImage4 h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+footer {
+  margin-top: 250px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer1 {
+  width: 250px;
+  height: auto;
+  margin-right: 200px;
+}
+
+.footerImg {
+  width: 250px;
+  height: 40px;
+  background-image: url("/Red\ Planet\ Ventures/Assets/Images/logo.png");
+  background-size: cover;
+}
+
+.footer2 {
+  width: 200px;
+}
+
+.footer3 {
+  width: 400px;
+}
+
+.contactSocialIconsRow {
+  width: 550px;
+  height: 50px;
+  display: flex;
+}
+
+.contactSocialImage1 {
+  width: 50px;
+  height: 50px;
+  background-image: url("/Red\ Planet\ Ventures/Assets/Images/smInstagram.png");
+  background-size: cover;
+  margin-right: 15px;
+}
+.contactSocialImage2 {
+  width: 50px;
+  height: 50px;
+  background-image: url("/Red\ Planet\ Ventures/Assets/Images/smX.png");
+  background-size: cover;
+  margin-right: 15px;
+}
+.contactSocialImage3 {
+  width: 50px;
+  height: 50px;
+  background-image: url("/Red\ Planet\ Ventures/Assets/Images/smTicktock.png");
+  background-size: cover;
+  margin-right: 15px;
+}
+.contactSocialImage4 {
+  width: 50px;
+  height: 50px;
+  background-image: url("/Red\ Planet\ Ventures/Assets/Images/smFacebook.png");
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
 }
